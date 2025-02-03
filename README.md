@@ -1,52 +1,263 @@
 # UAS-PakAhmadRoihan-PPL
-soal no 1
-gambarkan proses implementasi sistem yanga anda kembangkan,mulai dari persiapan lingkungan kerja hingga penerapan komponen-komponen perangkat lunak ,jelaskan langkah langkah anda dalan mengintegrasikan hardwarenya,software dan antar muka sehingga sistem dapat berjalan sesuai desain
-jawaban: Dalam mengembangkan dan menerapkan sistem web untuk toko bangunan, ada beberapa langkah yang perlu dilakukan mulai dari persiapan lingkungan kerja hingga penerapan komponen perangkat lunak dan pengintegrasian hardware, software, serta antarmuka agar sistem dapat berjalan sesuai desain. Berikut adalah langkah-langkah yang bisa dilakukan dalam implementasi sistem tersebut:
+# NAMA : MARLINDA
+# KELAS : 5A TEKNIK INFORMASI
 
-1. Persiapan Lingkungan Kerja
-Instalasi dan Setup Server: Pilih server yang sesuai, bisa menggunakan server lokal (on-premise) atau cloud (misalnya AWS, Google Cloud, DigitalOcean). Pastikan server ini memiliki spesifikasi yang cukup untuk menjalankan aplikasi web dan mengelola database.
-Pilih Teknologi dan Framework: Tentukan teknologi web yang akan digunakan, seperti:
-Frontend: HTML, CSS, JavaScript, ReactJS atau Vue.js untuk tampilan.
-Backend: PHP (Laravel), Node.js (Express), atau Python (Django, Flask) untuk pengolahan server.
-Database: MySQL, PostgreSQL, atau MongoDB untuk penyimpanan data produk dan transaksi.
-Instalasi Sistem Operasi dan Dependensi:
-Install OS (misalnya Ubuntu, CentOS) dan perangkat lunak pendukung seperti Nginx atau Apache untuk web server, PHP atau Node.js runtime environment, dan sistem manajemen database.
-2. Desain dan Pengembangan Sistem
-Desain Database:
-Tentukan struktur tabel yang diperlukan, seperti tabel untuk produk, kategori, pengguna, transaksi, dan stok barang.
-Tentukan relasi antar tabel untuk mengelola data secara efisien.
-Desain Antarmuka Pengguna (UI/UX):
-Rancang tampilan web, mulai dari halaman beranda, halaman produk, keranjang belanja, checkout, dan dashboard admin untuk manajemen produk dan laporan.
-Pastikan desain responsif agar tampilan web dapat diakses dengan nyaman di perangkat mobile dan desktop.
-Implementasi Fitur-fitur:
-Implementasikan fitur produk (menambahkan, mengedit, menghapus produk), pengelolaan stok, pencarian produk, keranjang belanja, dan sistem checkout.
-Integrasikan sistem pembayaran (misalnya dengan API pembayaran seperti Midtrans, Xendit) untuk memfasilitasi transaksi.
-Implementasikan login pengguna dan sistem autentikasi (misalnya menggunakan JWT atau OAuth2).
-3. Pengintegrasian Hardware dan Software
-Integrasi dengan Hardware Toko (jika ada): Jika toko bangunan memiliki hardware seperti mesin kasir, printer struk, atau perangkat lainnya, perlu ada pengintegrasian dengan sistem.
-POS (Point of Sale) System Integration: Jika ada sistem POS yang digunakan untuk transaksi langsung di toko fisik, pastikan data transaksi dari POS dapat terintegrasi dengan database sistem toko online.
-Barcode Scanner atau Printer: Integrasikan barcode scanner untuk mempermudah manajemen stok produk. Pastikan aplikasi web dapat mengakses perangkat barcode scanner dan menambah produk berdasarkan input dari scanner.
-Integrasi Sistem dengan API Eksternal: Jika sistem menggunakan layanan pihak ketiga seperti layanan pengiriman (Gojek, JNE) atau sistem pembayaran, pastikan API mereka terintegrasi dengan baik untuk memastikan transaksi dapat berjalan lancar.
-4. Uji Coba dan Pengujian
-Pengujian Sistem:
-Uji seluruh fitur aplikasi, mulai dari pencarian produk, menambah produk ke keranjang, hingga proses checkout dan pembayaran.
-Uji antarmuka pengguna untuk memastikan tampilan dan interaksi berjalan sesuai rencana.
-Lakukan pengujian integrasi antara frontend, backend, dan database untuk memastikan data dapat disalin dan diperbarui dengan benar.
-Pengujian Keamanan:
-Lakukan audit keamanan untuk memastikan aplikasi terlindung dari potensi ancaman seperti SQL Injection, XSS, dan CSRF.
-Pastikan data pengguna terlindungi dengan enkripsi yang memadai.
-5. Penerapan dan Peluncuran Sistem
-Deploy ke Server:
-Setelah semua pengujian selesai, deploy aplikasi ke server produksi.
-Pastikan file-file web dapat diakses melalui domain dan server bekerja dengan baik untuk menangani trafik.
-Penerapan Database:
-Lakukan migrasi database ke server produksi dan pastikan semua data produk dan transaksi terintegrasi dengan baik.
-Monitoring dan Pemeliharaan:
-Monitor performa sistem secara terus-menerus untuk mendeteksi masalah atau gangguan. Gunakan tools seperti Google Analytics dan error monitoring seperti Sentry.
-Lakukan pemeliharaan rutin, termasuk pembaruan perangkat lunak dan backup database.
-6. Peningkatan dan Pembaruan Sistem
-Setelah penerapan awal, lakukan peningkatan sistem berdasarkan umpan balik dari pengguna dan admin toko.
-Tambahkan fitur baru jika diperlukan, seperti sistem promosi, diskon, atau program loyalitas pelanggan.
-7. Dokumentasi dan Pelatihan
-Buat dokumentasi lengkap mengenai sistem untuk tim teknis dan staf operasional, termasuk cara menggunakan dan mengelola sistem.
-Lakukan pelatihan untuk staf toko fisik dalam mengoperasikan perangkat keras dan perangkat lunak yang terintegrasi dengan sistem web.
+soal no 1
+#no1
+
+Hardware Schematics
+
+Group member laptops
+Software Scheme
+
+-MySQL
+
+-PHP
+
+-Visual Studio Code
+
+-Visual paradigm
+
+Database Schema
+![image](https://github.com/user-attachments/assets/87152aa8-1185-4814-b146-c65d8411032f)
+
+Relationship Between Tables
+
+a. Main Table: The main tables are goods, categories, and members, as this data is central to recording transactions and other information.
+
+b. Important Relationships: Item to Category: Each item has a category (id_kategori).
+
+Sales and Notes to Goods: Transactions related to goods sold.
+
+Sales and Memos to Members: Transactions also record customers who make purchases.
+
+Member Login: Each login is only valid for specific members.
+
+Actor Scheme
+
+Use Case diagram
+Image
+
+Explanation of the diagram Login: Admins must log in before using the system.
+
+Managing Item Data: Admins can add, edit, or delete items in the system.
+
+Manage Stock of Goods: Admins increase or decrease the stock of available items.
+
+Make a Purchase: Admin selects the item sold, processes checkout, and prints an invoice.
+
+View Sales Reports: Admins can view sales reports periodically.
+
+View Transaction History: Admins can view transactions that have occurred for record-keeping purposes.
+
+Sequence Diagram
+
+Image
+
+Deskripsi Sequence Diagram: Aktor:
+
+Admin Entitas website Sistem Penjualan:
+
+Database
+
+Modul Login
+
+Modul Barang
+
+Modul Penjualan
+
+Modul Laporan
+
+Skema Interaksi:
+
+Admin Login:
+
+Admin memasukkan username dan password.
+
+Sistem memverifikasi kredensial di database.
+
+Sistem memberikan akses jika berhasil.
+
+Mengelola Barang:
+
+Admin menambah/mengedit/menghapus data barang.
+
+Sistem menyimpan perubahan di database.
+
+Melakukan Penjualan:
+
+Admin memilih barang untuk dijual.
+
+Admin memasukkan jumlah barang yang dijual.
+
+Sistem menghitung total harga dan menyimpan data transaksi.
+
+Melihat Laporan:
+
+Admin meminta laporan penjualan.
+
+Sistem mengambil data dari database dan menampilkan laporan.
+
+Activity Diagram
+
+image
+
+#NO2
+
+Untuk proyek ini, bahasa pemrograman yang akan digunakan adalah PHP dengan tambahan JavaScript untuk pengembangan sisi klien, serta MySQL untuk basis data
+
+Bahasa Pemrograman yang Digunakan
+PHP:
+
+PHP dipilih karena ini adalah bahasa pemrograman server-side yang sangat populer untuk pengembangan aplikasi web dinamis. Beberapa alasan memilih PHP:
+
+Mudah dipelajari: PHP relatif mudah dipelajari bagi pemula dan memiliki dokumentasi yang luas.
+
+Ketersediaan hosting: PHP didukung oleh hampir semua penyedia layanan hosting, sehingga lebih mudah untuk deploy aplikasi web.
+
+Keamanan: PHP memiliki banyak fitur keamanan yang sudah ada, seperti proteksi terhadap SQL injection dan Cross-Site Scripting (XSS).
+
+Kompatibilitas Database: PHP terintegrasi dengan MySQL secara alami dan memiliki banyak library untuk mempermudah pengelolaan database.
+
+JavaScript:
+
+JavaScript digunakan di sisi klien (frontend) untuk membuat antarmuka pengguna (UI) yang interaktif dan dinamis. JavaScript memungkinkan manipulasi DOM secara langsung, serta pengiriman dan pengambilan data melalui AJAX, yang meningkatkan pengalaman pengguna.
+
+MySQL:
+
+MySQL dipilih sebagai sistem manajemen basis data (DBMS) karena kehandalan dan kemudahan integrasi dengan PHP. MySQL adalah salah satu database yang paling banyak digunakan dalam pengembangan aplikasi web dan memiliki fitur yang kuat serta kinerja yang tinggi untuk menangani data dalam jumlah besar.
+
+Platform Pengembangan
+Aplikasi berbasis Web:
+
+Platform yang dipilih untuk pengembangan adalah aplikasi berbasis web. Hal ini memungkinkan pengguna untuk mengakses aplikasi dari perangkat apapun yang terhubung ke internet tanpa perlu menginstal perangkat lunak tambahan. Dengan menggunakan PHP di sisi server dan JavaScript di sisi klien, aplikasi dapat memberikan antarmuka yang dinamis dan dapat diakses di berbagai perangkat.
+
+Perangkat Lunak Pendukung
+IDE (Integrated Development Environment):
+
+Visual Studio Code (VSCode): VSCode dipilih karena ringan, mudah digunakan, dan memiliki banyak ekstensi yang mendukung PHP, JavaScript, dan MySQL.
+
+XAMPP atau MAMP:
+
+XAMPP (atau MAMP untuk macOS) digunakan untuk menyediakan server lokal dengan Apache, PHP, dan MySQL, yang memungkinkan pengembangan dan pengujian aplikasi secara offline.
+
+Git:
+
+Digunakan untuk version control. Proyek ini akan menggunakan Git sebagai alat untuk mengelola dan melacak perubahan kode yang dilakukan oleh tim pengembangan, serta untuk kolaborasi melalui GitHub.
+
+MySQL Workbench:
+
+Untuk memudahkan desain dan manajemen database MySQL, MySQL Workbench digunakan. Dengan Workbench, proses pembuatan dan pengelolaan database menjadi lebih intuitif.
+
+image
+
+#no3
+
+Gambaran proses implementasi sistem dari persiapan lingkungan kerja hingga penerapan komponen-komponen perangkat lunak. Langkah-langkah ini mencakup integrasi hardware, software, database, dan antarmuka pengguna untuk memastikan sistem berjalan sesuai desain.
+
+Persiapan Lingkungan Kerja
+Instalasi Perangkat Lunak dan Alat Pengembangan:
+-Instalasi IDE: Pertama, install IDE seperti Visual Studio Code (VSCode) yang akan digunakan untuk menulis kode PHP dan JavaScript. Pastikan VSCode terkonfigurasi dengan ekstensi untuk PHP, JavaScript, dan MySQL.
+
+-Instalasi XAMPP/MAMP: Install XAMPP (atau MAMP untuk macOS) untuk menyediakan server lokal yang mencakup Apache, PHP, dan MySQL. Ini akan menjadi platform pengujian untuk aplikasi berbasis web yang sedang dikembangkan.
+
+-Instalasi Git: Instal Git untuk kontrol versi, sehingga dapat melacak perubahan kode dan kolaborasi dengan tim pengembang.
+
+-MySQL Workbench: Instal MySQL Workbench untuk desain dan manajemen basis data.
+
+-Konfigurasi Database:
+
+Buat database baru di MySQL dengan nama tb_anugrah (sesuai dengan struktur yang sudah direncanakan). Buat tabel yang diperlukan dalam database sesuai dengan desain yang telah dibuat, seperti detail, pesanan, masuk, pesanan_produk, dan user. Siapkan hubungan antar tabel (relasi) menggunakan foreign keys jika diperlukan untuk memastikan integritas data.
+
+-Pengaturan Server Lokal:
+
+Pastikan XAMPP/MAMP berjalan dengan baik dan Apache serta MySQL dapat diakses melalui localhost. Uji apakah PHP dapat dijalankan dengan membuat file PHP sederhana dan mengaksesnya melalui browser.
+
+Pengembangan Aplikasi
+-Desain dan Pengembangan Antarmuka Pengguna (Frontend):
+
+HTML, CSS, dan JavaScript digunakan untuk membuat tampilan antarmuka pengguna. Halaman seperti login.php, dashboard.php, produk.php, dan pesanan.php dikembangkan dengan elemen-elemen HTML dan CSS yang bersih dan responsif. Gunakan JavaScript untuk menambah interaktivitas, seperti pengambilan data secara dinamis melalui AJAX, validasi formulir di sisi klien, dan manipulasi DOM untuk memberikan pengalaman pengguna yang lebih baik.
+
+-Pengembangan Backend:
+
+PHP digunakan untuk menangani logika aplikasi di sisi server. Ini termasuk: Koneksi ke database menggunakan db.php. Menangani proses autentikasi dan manajemen sesi pada login.php. Memproses data yang dikirimkan dari formulir dan melakukan operasi CRUD pada pesanan.php, produk.php, dan detail_pesanan.php. Mengubah status pesanan melalui ubah_status.php dan mengelola laporan pada laporan.php. Kode PHP akan mengakses dan memodifikasi data di database tb_anugrah sesuai dengan permintaan pengguna.
+
+-Integrasi Sistem Keamanan:
+
+Terapkan prosedur keamanan standar seperti hashing password menggunakan fungsi PHP password_hash() untuk melindungi data pengguna. Gunakan prepared statements di PHP untuk mencegah SQL Injection saat berinteraksi dengan database. Terapkan pengamanan untuk melindungi aplikasi dari Cross-Site Scripting (XSS) dan Cross-Site Request Forgery (CSRF).
+
+Pengujian Sistem
+-Pengujian Fungsional:
+
+Uji setiap fitur aplikasi untuk memastikan bahwa semua fungsionalitas berfungsi seperti yang diinginkan, mulai dari login, manajemen produk, hingga pengelolaan pesanan. Lakukan pengujian terhadap form input untuk memastikan data yang dimasukkan ke dalam database akurat dan tidak ada kesalahan logika dalam aplikasi.
+
+-Pengujian Keamanan:
+
+Lakukan uji keamanan seperti penetration testing untuk mencari potensi celah di aplikasi. Pastikan bahwa session hijacking dan SQL injection tidak bisa dilakukan oleh pihak yang tidak berwenang.
+
+-Pengujian Performa:
+
+Uji performa aplikasi di server lokal dengan beberapa beban pengguna untuk memastikan aplikasi dapat menangani permintaan dengan cepat dan tanpa masalah.
+
+Integrasi dan Penyebaran
+-Integrasi Sistem:
+
+Setelah semua komponen diuji secara terpisah, integrasikan frontend dan backend secara penuh. Pastikan komunikasi antara frontend (JavaScript) dan backend (PHP) berjalan lancar. Penggunaan AJAX untuk pengiriman data secara dinamis dan pemrosesan di PHP harus berfungsi tanpa hambatan.
+
+-Penyebaran ke Server Produksi:
+
+Setelah aplikasi siap untuk digunakan, deploy aplikasi ke server produksi. Pastikan konfigurasi server di hosting sudah sesuai, seperti pengaturan domain, basis data, dan keamanan server. Terapkan SSL untuk enkripsi data yang dikirimkan antara klien dan server.
+
+Pemeliharaan dan Pembaruan
+-Pemantauan dan Logging:
+
+Pasang alat pemantauan untuk memantau performa server dan aplikasi. Gunakan log error untuk melacak masalah yang muncul selama penggunaan.
+
+-Pembaruan Sistem:
+
+Secara rutin lakukan pembaruan terhadap aplikasi, memperbaiki bug yang ditemukan, serta meningkatkan fitur dan keamanan sistem.
+
+#4
+
+Metode Pengujian: Black-Box Testing
+Black-box testing berfokus pada pengujian fungsionalitas aplikasi tanpa melihat implementasi internal dari kode sumber. Pengujian ini berfokus pada input dan output aplikasi untuk memastikan aplikasi bekerja sesuai dengan persyaratan pengguna dan spesifikasi sistem. Pengujian ini akan mencakup jenis-jenis pengujian berikut:
+
+Jenis Pengujian Black-Box:
+
+Unit Testing:
+
+Unit testing akan menguji bagian-bagian terkecil dari aplikasi seperti fungsi atau metode individual untuk memastikan bahwa setiap unit kode berfungsi dengan benar. Misalnya, pengujian validasi form login untuk memastikan hanya pengguna yang valid yang dapat masuk.
+
+Hasil Pengujian:
+
+Jika fungsi login menerima input yang benar (username dan password yang valid), maka pengguna dapat diarahkan ke dashboard. Sebaliknya, input yang salah akan menghasilkan pesan error.
+
+#5
+
+Identifikasi Masalah Kesalahan pencatatan transaksi secara manual, seperti total pembayaran atau stok barang.
+Kesulitan dalam mengetahui stok barang secara real-time.
+
+Proses pembuatan laporan yang memakan waktu karena dilakukan secara manual.
+
+Risiko kehilangan data akibat tidak adanya sistem terpusat.
+
+Kurangnya efisiensi dalam pengelolaan data barang dan transaksi.
+
+Rumusan Masalah Bagaimana merancang sistem penjualan berbasis website untuk mempermudah pencatatan transaksi di toko bangunan?
+Bagaimana sistem ini dapat membantu memantau stok barang secara real-time?
+
+Bagaimana cara mengintegrasikan pembuatan laporan otomatis ke dalam sistem?
+
+Bagaimana memastikan keamanan dan akurasi data dalam sistem penjualan berbasis website?
+
+Solusi
+Sistem Penjualan Berbasis Website
+Develop a web-based sales system that allows automatic recording of transactions and stored in a database. Every transaction made will be directly integrated into the system without the need for manual recording.
+
+Real-Time Stock Monitoring
+Provides a stock management feature that automatically updates the number of items after a transaction. It uses a MySQL database to store stock data and AJAX to display stock data in real-time in the admin dashboard.
+
+Automated Report Generation
+Developed an automated reporting module that generates sales and stock reports based on transaction data. Reports can be exported in PDF/Excel format and displayed in graph form for easier analysis.
+
+Data Security and Accuracy
