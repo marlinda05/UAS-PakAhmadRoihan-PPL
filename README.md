@@ -102,9 +102,9 @@ Activity Diagram
 ![image](https://github.com/user-attachments/assets/a59c068f-7646-4dcd-a9a1-7d3a74986058)
 
 
-#NO2
-
-Untuk proyek ini, bahasa pemrograman yang akan digunakan adalah PHP dengan tambahan JavaScript untuk pengembangan sisi klien, serta MySQL untuk basis data
+#NO2 Deskripsikan metode pengujian(blok/white testing) yang anda gunakan untuk memastikan pernagkan lunak berpungsi dengan baik. jelaskan pengujian yang diterapkan (misalnya unit terting,integration testing, system testing atau user acceptance testing), hasil pengujian yang diperoleh,dan kesimpulan dari pengujian tersebut
+Untuk proyek ini, bahasa pemrograman yang akan digunakan adalah PHP dengan tambahan JavaScript untuk pengembangan sisi klien, serta MySQL untuk basis data.
+jawab:
 
 1. Bahasa Pemrograman yang Digunakan
 PHP:
@@ -218,7 +218,13 @@ Pasang alat pemantauan untuk memantau performa server dan aplikasi. Gunakan log 
 
 Secara rutin lakukan pembaruan terhadap aplikasi, memperbaiki bug yang ditemukan, serta meningkatkan fitur dan keamanan sistem.
 
-#4
+#NO4
+buatlah rancangan teknis perangkat lunak yang meliputi:
+1. skema hardware : jelaskan perangkat keras yang dibutkan untuk menjalankan sistem
+2. skema software: berikan spesifikasi sistem operasi,framework,library dan bahasa pemrograman yang digunakan
+3. skema database: gambarkan class diagram atau ERD untuk mendeskripsikan struktur yang anda gunakan
+4. skema actor: buatlah use case diagram,squence diagram dan activity diagram untuk menjelaskan alur sistem yang melibatkan pengguna dan interaksi antar komponen sistem,sertakan diagram yag relapan dalam laporan anda
+
 
 Metode Pengujian: Black-Box Testing
 Black-box testing berfokus pada pengujian fungsionalitas aplikasi tanpa melihat implementasi internal dari kode sumber. Pengujian ini berfokus pada input dan output aplikasi untuk memastikan aplikasi bekerja sesuai dengan persyaratan pengguna dan spesifikasi sistem. Pengujian ini akan mencakup jenis-jenis pengujian berikut:
@@ -233,8 +239,8 @@ Hasil Pengujian:
 
 Jika fungsi login menerima input yang benar (username dan password yang valid), maka pengguna dapat diarahkan ke dashboard. Sebaliknya, input yang salah akan menghasilkan pesan error.
 
-#5
-
+#NO5
+gambarkan proses implementasi sistem yanga anda kembangkan,mulai dari persiapan lingkungan kerja hingga penerapan komponen-komponen perangkat lunak ,jelaskan langkah langkah anda dalan mengintegrasikan hardwarenya,software dan antar muka sehingga sistem dapat berjalan sesuai desain
 Identifikasi Masalah Kesalahan pencatatan transaksi secara manual, seperti total pembayaran atau stok barang.
 Kesulitan dalam mengetahui stok barang secara real-time.
 
@@ -252,9 +258,10 @@ Bagaimana cara mengintegrasikan pembuatan laporan otomatis ke dalam sistem?
 Bagaimana memastikan keamanan dan akurasi data dalam sistem penjualan berbasis website?
 
 Solusi
-- Sistem Penjualan Berbasis Website
+Sistem Penjualan Berbasis Website
 Mengembangkan sistem penjualan berbasis web yang memungkinkan pencatatan transaksi secara otomatis dan tersimpan dalam database. Setiap transaksi yang dilakukan akan langsung terintegrasi ke sistem tanpa perlu pencatatan manual.
-                                                                                                                                          =Pemantauan Stok Barang Real-Time
+
+Pemantauan Stok Barang Real-Time
 Menyediakan fitur manajemen stok yang otomatis memperbarui jumlah barang setelah transaksi. Menggunakan database MySQL untuk menyimpan data stok barang dan AJAX untuk menampilkan data stok secara real-time di dashboard admin.
 
 Pembuatan Laporan Otomatis
