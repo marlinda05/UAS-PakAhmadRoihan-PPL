@@ -2,10 +2,10 @@
 # NAMA : MARLINDA
 # KELAS : 5A TEKNIK INFORMASI
 
-soal no 1
-#no1
 
-Hardware Schematics
+#no1
+Jelaskan permasalahan yang ingin diselesaikan dalam proyekp perangkat lunak yang anda kembangkan. berikan analis mendalam mengenai penyebab utama permasalahan tersebut dandampaknya pada pengguna atau sistem.kemudian,usulkan solusi yang dapat di terapkan dengan teknologi perangkat lunak,serta bagaimana solusi tersebut dapat memenuhi kebutuhan pengguna.
+Hpeardware Schematics
 
 Group member laptops
 Software Scheme
