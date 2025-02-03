@@ -252,13 +252,13 @@ Bagaimana cara mengintegrasikan pembuatan laporan otomatis ke dalam sistem?
 Bagaimana memastikan keamanan dan akurasi data dalam sistem penjualan berbasis website?
 
 Solusi
-Sistem Penjualan Berbasis Website
-Develop a web-based sales system that allows automatic recording of transactions and stored in a database. Every transaction made will be directly integrated into the system without the need for manual recording.
+- Sistem Penjualan Berbasis Website
+Mengembangkan sistem penjualan berbasis web yang memungkinkan pencatatan transaksi secara otomatis dan tersimpan dalam database. Setiap transaksi yang dilakukan akan langsung terintegrasi ke sistem tanpa perlu pencatatan manual.
+                                                                                                                                          =Pemantauan Stok Barang Real-Time
+Menyediakan fitur manajemen stok yang otomatis memperbarui jumlah barang setelah transaksi. Menggunakan database MySQL untuk menyimpan data stok barang dan AJAX untuk menampilkan data stok secara real-time di dashboard admin.
 
-Real-Time Stock Monitoring
-Provides a stock management feature that automatically updates the number of items after a transaction. It uses a MySQL database to store stock data and AJAX to display stock data in real-time in the admin dashboard.
+Pembuatan Laporan Otomatis
+Mengembangkan modul laporan otomatis yang menghasilkan laporan penjualan dan stok barang berdasarkan data transaksi. Laporan dapat diekspor dalam format PDF/Excel dan ditampilkan dalam bentuk grafik untuk analisis lebih mudah.
 
-Automated Report Generation
-Developed an automated reporting module that generates sales and stock reports based on transaction data. Reports can be exported in PDF/Excel format and displayed in graph form for easier analysis.
-
-Data Security and Accuracy
+Keamanan dan Akurasi Data
+Mengimplementasikan validasi input dan enkripsi data sensitif (seperti hash password dengan password_hash()). Menggunakan backup database otomatis untuk mencegah kehilangan data. Menerapkan role-based access control (RBAC) untuk membatasi akses pengguna berdasarkan hak tertentu.
