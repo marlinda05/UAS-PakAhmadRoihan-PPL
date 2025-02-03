@@ -36,7 +36,7 @@ Member Login: Each login is only valid for specific members.
 Actor Scheme
 
 Use Case diagram
-Image
+![image](https://github.com/user-attachments/assets/8526a717-22b4-4a6b-ad9b-4d2775b30790)
 
 Explanation of the diagram Login: Admins must log in before using the system.
 
@@ -51,8 +51,8 @@ View Sales Reports: Admins can view sales reports periodically.
 View Transaction History: Admins can view transactions that have occurred for record-keeping purposes.
 
 Sequence Diagram
+![image](https://github.com/user-attachments/assets/16b85c4d-6c09-42ea-a32c-5724f0c5c6e0)
 
-Image
 
 Deskripsi Sequence Diagram: Aktor:
 
@@ -99,14 +99,14 @@ Admin meminta laporan penjualan.
 Sistem mengambil data dari database dan menampilkan laporan.
 
 Activity Diagram
+![image](https://github.com/user-attachments/assets/a59c068f-7646-4dcd-a9a1-7d3a74986058)
 
-image
 
 #NO2
 
 Untuk proyek ini, bahasa pemrograman yang akan digunakan adalah PHP dengan tambahan JavaScript untuk pengembangan sisi klien, serta MySQL untuk basis data
 
-Bahasa Pemrograman yang Digunakan
+1. Bahasa Pemrograman yang Digunakan
 PHP:
 
 PHP dipilih karena ini adalah bahasa pemrograman server-side yang sangat populer untuk pengembangan aplikasi web dinamis. Beberapa alasan memilih PHP:
@@ -123,16 +123,16 @@ JavaScript:
 
 JavaScript digunakan di sisi klien (frontend) untuk membuat antarmuka pengguna (UI) yang interaktif dan dinamis. JavaScript memungkinkan manipulasi DOM secara langsung, serta pengiriman dan pengambilan data melalui AJAX, yang meningkatkan pengalaman pengguna.
 
-MySQL:
+ ySQL:
 
 MySQL dipilih sebagai sistem manajemen basis data (DBMS) karena kehandalan dan kemudahan integrasi dengan PHP. MySQL adalah salah satu database yang paling banyak digunakan dalam pengembangan aplikasi web dan memiliki fitur yang kuat serta kinerja yang tinggi untuk menangani data dalam jumlah besar.
 
-Platform Pengembangan
+2.Platform Pengembangan
 Aplikasi berbasis Web:
 
 Platform yang dipilih untuk pengembangan adalah aplikasi berbasis web. Hal ini memungkinkan pengguna untuk mengakses aplikasi dari perangkat apapun yang terhubung ke internet tanpa perlu menginstal perangkat lunak tambahan. Dengan menggunakan PHP di sisi server dan JavaScript di sisi klien, aplikasi dapat memberikan antarmuka yang dinamis dan dapat diakses di berbagai perangkat.
 
-Perangkat Lunak Pendukung
+3. Perangkat Lunak Pendukung
 IDE (Integrated Development Environment):
 
 Visual Studio Code (VSCode): VSCode dipilih karena ringan, mudah digunakan, dan memiliki banyak ekstensi yang mendukung PHP, JavaScript, dan MySQL.
@@ -149,7 +149,8 @@ MySQL Workbench:
 
 Untuk memudahkan desain dan manajemen database MySQL, MySQL Workbench digunakan. Dengan Workbench, proses pembuatan dan pengelolaan database menjadi lebih intuitif.
 
-image
+![GitHub - khaerun19_UAS-PakAhmadRoihan-PPL - Profile 1 - Microsoft​ Edge 03_02_2025 20_49_10](https://github.com/user-attachments/assets/8d214b73-3b7c-4f63-b023-11982a65e37b)
+
 
 #no3
 
